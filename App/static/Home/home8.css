@@ -1,0 +1,373 @@
+* {
+	margin:0;
+padding:0;
+}
+
+#wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#hideButton {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  left:0;right: 0;top: 0;bottom: 0;
+  margin: auto;
+  width: 20%;
+  height: 20%;
+}
+
+#info {
+  display: table;
+  background: rgba(0, 0, 0,0.4);
+  height: 100%;
+  width: 100%;
+}
+#info #info-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+}
+#info #info-content h1 {
+  color: #fff;
+  border: 3px solid #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  font-weight: normal;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+}
+#info #info-content h1 strong {
+  display: block;
+  font-size: 26px;
+}
+
+
+/*----------nav---------------*/
+* {
+  padding : 0;
+  margin  : 0;
+  border  : 0;
+}
+
+*:after , *:before {
+  display : block;
+  content : "";
+  position: absolute;
+}
+nav {
+
+  width : 476px;
+
+  position : absolute;
+
+left:0;right:0;
+margin-left:auto;
+margin-right:auto;
+bottom:10%;
+}
+
+menu:after , menu:before {
+  top       : 0;
+  width     : 60px;
+  height    : 76px;
+  background: #eae2d5;
+} 
+
+menu:after {
+  clear : both;
+  right : -61px;
+  border-right : 1px solid #857e74;
+}
+
+menu:before {
+  left  : -55px;
+  border-left : 1px solid #857e74;
+}
+
+.ribbon {
+  position : absolute;
+  top      : 76px;
+  border-style : solid ;
+  border-width : 13px;
+}
+
+.ribbon.left {
+  left     : -55px;
+  border-color : #857e74 #857e74 transparent transparent;
+}
+
+.ribbon.right {
+  left         : 511px;
+  border-color : #857e74 transparent transparent #857e74;	
+}
+
+.left:after , .left:before {
+  left     : -68px;
+  border-style : solid;
+  z-index : -2;
+}
+
+.left:after {
+  top      : -68px;
+  border-width : 58px 0 0 56px;
+  border-color : #eae2d5 transparent transparent transparent;
+}
+
+.left:before {
+  top      : -26px;
+  border-width : 0 40px 38px 41px;
+  border-color : transparent transparent #eae2d5 transparent;			
+}
+.right:after , .right:before {
+  right    : -65px;
+  border-style : solid;
+  z-index : -2;
+}
+
+.right:before {
+  top      : -25px;
+  border-width : 0 40px 38px 38px;
+  border-color : transparent transparent #eae2d5 transparent;			
+}
+
+.right:after {
+  top      : -65px;
+  border-width : 58px 56px 0 0;
+  border-color : #eae2d5 transparent transparent transparent;
+}
+
+.li {
+  float       : left;
+  position    : relative;
+  margin-left : 33px;
+  cursor      : pointer;
+  background-color   : #eae2d5;
+  list-style-type    : none;
+  border-left        : 2px solid #d7cfc2;
+  border-right       : 2px solid #d7cfc2;
+  transition : margin .1s ,padding .1s ,border 1s;
+
+}
+
+.li:first-child {
+  margin-left : 20px;
+}
+
+.li:before , .li:after {
+  display    : block;
+  position   : absolute;
+  top        : 0;
+  width      : 20px;
+  height     : 100%;
+  background : inherit;
+  transition : all .1s;
+}
+
+.li:before {
+  right : 100%;
+} 
+
+.li:after {
+  left : 100%; 
+}
+.li:hover {
+  margin-top 		   : -9px;
+  box-shadow         : 0 4px 10px 0px #000;
+  transition : margin .2s ,padding .2s;
+}
+
+.li:hover:before , .li:hover:after {
+  height : 86%;
+  background         : #d7cfc2;
+  transition : all .2s;
+}
+
+.li:hover:before {
+  transform : rotate(-30deg) skew(-30deg) translate(1.5px,9px);
+}
+
+.li:hover:after {
+  transform : rotate(30deg) skew(30deg) translate(-1.5px,9px);
+}
+.navA {
+  display : block;
+  padding : 10px 15px;
+  text-decoration : none;
+  text-align      : center
+}
+
+.navA span {
+  text-shadow : 1px 1px 1px #FFF;
+  color       : #857e74;
+  transition  : all .2s;
+}
+
+.navA span:first-child {
+  font-family : icon;
+  font-size   : 33px;
+  display     : block;
+}
+
+.navA span:last-child {
+  text-transform : capitalize;
+  font-family    : 'Georgia';
+  font-size      : 11px;
+  letter-spacing : 1px;
+  font-style     : italic;
+  color   	   : #6488ba;
+}
+
+.li:hover span {
+  transition : all .2s;
+}
+
+.li:hover a span:first-child {
+  color : #6488ba;
+  text-shadow  : 1px 1px 1px #FFF , 0 0 1px #6488ba;
+}
+
+.li:hover a span:last-child {
+  color : #857e74;
+}
+
+/*------------------------------paper------------------*/
+/* 
+   Generates the negative triangle as part of a offset with :before and :after
+
+   $location: Where you want the negative triangle [top, right, bottom, left]
+
+   $position: In percentage where the negative triangle should be placed. With 50% the cut out triangle is in the center.
+
+   $size: How much will the surface be extruded in order to cut out the triangle. Can be any valid size (px, em, rem, % etc.)
+
+   $color: The color of the extruded part where the triangle gets cut out
+*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  bottom:10%;
+  right:6%;
+}
+.container > .folder {
+  width: 110px;
+  height: 90px;
+  left: calc(50% - 50px);
+  top: calc(70% - 40px);
+  position: absolute;
+}
+.container > .folder > .cover {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fab62f;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 5px 5px;
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.2);
+}
+.container > .folder > .cover:before, .container > .folder > .cover:after {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -100px;
+  border: 50px solid transparent;
+}
+.container > .folder > .cover:before {
+  left: 0;
+  width: 50%;
+  border-left: none;
+  border-bottom-color: #fab62f;
+}
+.container > .folder > .cover:after {
+  right: 0;
+  width: 50%;
+  border-right: none;
+  border-bottom-color: #fab62f;
+}
+.container > .folder > .cover > .title {
+  position: absolute;
+  padding: 0.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.1);
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.container > .folder > .paper {
+  opacity: 1;
+  position: absolute;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  top: calc(50% - 100px);
+  left: calc(50% - 50px);
+  transition: top 0.5s, opacity 0.4s;
+  font-size: 0.1em;
+  padding: 0.5em;
+  color: #644812;
+  background-color: #fde1ab;
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 2.5px;
+  -webkit-border-radius: 2.5px;
+  border-radius: 2.5px;
+}
+.container > .folder:hover > .paper {
+  top: calc(50% - 150px);
+}
+.container > .folder.opened > .paper {
+  top: calc(-500px);
+  opacity: 0;
+}
+
+.paperContent {
+	font-size: 1.5em;
+}
+
+.showPaper {
+  visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  width: 500px;
+  height: 300px;
+  top: calc(50% - 200px);
+  margin-left: auto;
+  margin-right: auto;
+  transition: top 0.5s, opacity 0.4s;
+  padding: 1em;
+  color: #644812;
+  background-color: #fde1ab;
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+left:0;right:0;
+margin-left:auto;margin-right;
+}

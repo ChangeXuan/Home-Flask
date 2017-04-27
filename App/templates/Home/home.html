@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{url_for("static",filename='Home/tab7.css')}}" media="screen" type="text/css">
+    <link rel="stylesheet" href="{{url_for("static",filename='Home/twoTab7.css')}}" media="screen" type="text/css">
+    <link href="{{url_for("static",filename='Home/home8.css')}}" rel="stylesheet">
+
+
+<style>
+
+</style>
+
+
+  </head>
+<body style="background-image:url({{url_for("static",filename='bgImg/bgImg.jpg')}});background-size:cover">
+
+<div id="info">
+  <div id="info-content">
+    <h1><strong>AISTLAB</strong>Our Home</h1>
+    <p>行至水穷处，坐看云起时</p>
+  </div>
+</div>
+
+
+
+<div>
+<dl class="list sashimi">
+        <dt class="toggle"><a href="#">小任务</a></dt>
+        <dd class="oneCar"><a href="#">西华杯-训练计划</a></dd>
+	      <dd class="twoCar"><a href="#">泡沫垫测试</a></dd>
+        <dd class="threeCar"><a href="#">跑道>=4的设计</a></dd>
+        <dd class="fourCar"><a href="#">计时器</a></dd>
+        <dd class="fiveCar"><a href="#">机械可行性验证</a></dd>
+        <dd class="sixCar"><a href="#">MFC模块的使用</a></dd>
+        <dd class="sevenCar"><a href="#">蓝牙4.0模块的使用</a></dd>
+        <dd class="eighthCar"><a href="#">巡线小车比赛</a></dd>
+    </dl>
+
+</div>
+
+<!-- <div>
+  <nav>
+  <menu>
+    <li class="li">
+      <a href="#" class="navA">
+        <span>t</span>
+        <span>twitter</span>
+      </a>
+    </li>
+    <li class="li">
+      <a href="#" class="navA">
+        <span>c</span>
+        <span>codepen</span>
+      </a>
+    </li>
+    <li class="li">
+      <a href="#" class="navA">
+        <span>d</span>
+        <span>dribbble</span>
+      </a>
+    </li>
+    <li class="li">
+      <a href="#" class="navA">
+        <span>g</span>
+        <span>google+</span>
+      </a>
+    </li>
+  </menu>
+  <div class="ribbon left"></div>
+  <div class="ribbon right"></div>
+</nav>
+</div> -->
+
+<div class="container">
+  <div class="folder">
+   <div class="paper">
+      <h1>Hello World</h1>
+      <p class="paperContent">{{paperContent}}</p>
+</div>
+    <div class="cover">
+      <div class="title">Open</div>
+    </div>
+  </div>
+</div>
+<div id="hideButton"></div>
+<div class="showPaper"></div>
+
+
+
+
+<script src="{{url_for("static",filename='Home/jquery.js')}}"></script>
+<script src="{{url_for("static",filename='Home/showTab2.js')}}"></script>
+<script src="{{url_for("static",filename='Home/paper.js')}}"></script>
+
+</body>
+</html>

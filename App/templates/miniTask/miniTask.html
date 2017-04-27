@@ -1,0 +1,19 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{url_for("static",filename='miniTask/miniTask3.css')}}">
+<script>
+function backHome() {
+	self.location = ".."
+}
+</script>
+
+</head>
+<body bgcolor="#000000">
+<div>
+<a onclick="backHome()">Back Home</a>
+<h2 align="center">
+{{content}}
+</h2>
+</div>
+</body>
+</html>

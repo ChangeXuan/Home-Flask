@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{url_for("static",filename='Home/showTab.css')}}" media="screen" type="text/css"/>
+  </head>
+<body background = "{{url_for("static",filename='bgImg/bgImg.jpg')}}">
+
+
+
+<div >
+
+        <dl class="list sashimi">
+            <dt class="toggle"><a href="#">Sashimi</a></dt>
+            <dd><a href="#">Maguro</a></dd>
+            <dd><a href="#">Toro</a></dd>
+            <dd><a href="#">Ebi</a></dd>
+            <dd><a href="#">Saba</a></dd>
+            <dd><a href="#">Ika</a></dd>
+            <dd><a href="#">Tako</a></dd>
+            <dd><a href="#">Tomago</a></dd>
+            <dd><a href="#">Kani</a></dd>
+            <dd><a href="#">Katsuo</a></dd>
+            <dd><a href="#">Maguro</a></dd>
+        </dl>
+</div>
+
+<script src="{{url_for("static",filename='Home/jquery.js')}}"></script>
+<script src="{{url_for("static",filename='Home/showTab.js')}}"></script>
+
+</body>
+</html>

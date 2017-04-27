@@ -1,0 +1,15 @@
+@font-face {
+	font-family:miniTask;
+	src:url('miniTask.ttf')
+}
+
+div {
+	font-family:miniTask;
+	color:rgb(222,222,222);
+}
+
+h2 {
+	margin-top:20%;
+	margin-left:20%;
+	margin-right:20%;
+}
